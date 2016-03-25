@@ -2,7 +2,7 @@
   "name": "kintone Ctrl Enter",
   "short_name": "kintoneCtrlEnter",
   "manifest_version": 2,
-  "version": "0.3.1",
+  "version": "0.3.2",
   "content_scripts": [
     {
       "all_frames": true,

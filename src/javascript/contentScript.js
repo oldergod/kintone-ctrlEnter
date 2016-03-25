@@ -9,11 +9,20 @@
         return;
       }
       const submitButton = form.querySelector('[type=submit]');
-      if (!submitButton) {
+      if (submitButton) {
+        submitButton.click();
+      } else {
+        // check old design
+        const oldDesignSubmitButton = form.querySelector('button.comment-form-submit-gaia');
+        if (oldDesignSubmitButton) {
+          oldDesignSubmitButton.click();
+        } else {
+          return;
+        }
+      } else {
         return;
       }
 
-      submitButton.click();
       evt.preventDefault();
       evt.stopPropagation();
     }
