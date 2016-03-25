@@ -14,14 +14,14 @@ var jsSourcePath = './src/javascript/**/*';
 var contentScriptEntryPath = './src/javascript/contentScript.js';
 
 var jshintOptions = {
-      curly: true,
-      eqeqeq: true,
-      laxbreak: true,
-      laxcomma: true,
-      eqnull: true,
-      nonbsp: true,
-      browser: true
-    };
+  curly: true,
+  eqeqeq: true,
+  laxbreak: true,
+  laxcomma: true,
+  eqnull: true,
+  nonbsp: true,
+  browser: true
+};
 
 gulp.task('jshint', function() {
   return gulp.src(jsSourcePath)
@@ -43,7 +43,8 @@ gulp.task('scripts', function() {
   var b = gulp.src(contentScriptEntryPath)
     .pipe(buffer());
 
-  if (isProd) {
+  // cannot minify es6 for now
+  if (isProd && false) {
     b = b.pipe(uglify().on('error', gutil.log));
   }
 

@@ -1,6 +1,6 @@
 {
   "name": "kintoneCtrlEnter",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "description": "allow Ctrl+Enter to submit current form.",
   "devDependencies": {
     "del": "^2.2.0",

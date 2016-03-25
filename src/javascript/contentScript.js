@@ -1,25 +1,23 @@
-﻿(function () {
-'use strict';
+'use strict'; {
+  const ENTER_KEY = 13;
 
-var ENTER_KEY = 13;
+  const submitForm = (evt) => {
+    if ((evt.ctrlKey || evt.metaKey) && evt.keyCode === ENTER_KEY) {
+      const target = evt.target;
+      const form = target.closest('form');
+      if (!form) {
+        return;
+      }
+      const submitButton = form.querySelector('[type=submit]');
+      if (!submitButton) {
+        return;
+      }
 
-var keyUp = function(evt) {
-  if ((evt.ctrlKey || evt.metaKey) && evt.keyCode === ENTER_KEY) {
-    var target = evt.target;
-    var form = target.closest('form');
-    if (!form) {
-      return;
+      submitButton.click();
+      evt.preventDefault();
+      evt.stopPropagation();
     }
-    var submitButton = form.querySelector('[type=submit]');
-    if (!submitButton) {
-      return;
-    }
+  };
 
-    submitButton.click();
-    evt.preventDefault();
-    evt.stopPropagation();
-  }
-};
-// register the handler
-document.addEventListener('keydown', keyUp, false);
-}());
+  document.addEventListener('keydown', submitForm, false);
+}
