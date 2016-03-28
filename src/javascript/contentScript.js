@@ -19,8 +19,6 @@
         } else {
           return;
         }
-      } else {
-        return;
       }
 
       evt.preventDefault();
