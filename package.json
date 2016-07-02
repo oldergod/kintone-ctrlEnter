@@ -5,7 +5,7 @@
   "devDependencies": {
     "del": "^2.2.0",
     "gulp": "^3.9.0",
-    "gulp-bump": "^1.0.0",
+    "gulp-bump": "^2.2.0",
     "gulp-jshint": "^2.0.0",
     "gulp-license": "^1.0.0",
     "gulp-uglify": "^1.5.1",
