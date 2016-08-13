@@ -3,7 +3,7 @@
   "version": "0.1.9",
   "description": "allow Ctrl+Enter to submit current form.",
   "devDependencies": {
-    "del": "^2.2.0",
+    "del": "^2.2.2",
     "gulp": "^3.9.0",
     "gulp-bump": "^2.2.0",
     "gulp-jshint": "^2.0.0",
