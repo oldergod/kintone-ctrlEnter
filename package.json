@@ -9,7 +9,7 @@
     "gulp-jshint": "^2.0.0",
     "gulp-license": "^1.0.0",
     "gulp-uglify": "^2.0.0",
-    "gulp-util": "^3.0.7",
+    "gulp-util": "^3.0.8",
     "gulp-zip": "^3.0.2",
     "jshint": "^2.8.0",
     "jshint-stylish": "^2.2.1",
