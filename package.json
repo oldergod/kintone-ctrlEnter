@@ -8,7 +8,7 @@
     "gulp-bump": "^2.4.0",
     "gulp-jshint": "^2.0.0",
     "gulp-license": "^1.0.0",
-    "gulp-uglify": "^2.0.0",
+    "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.7",
     "gulp-zip": "^3.0.2",
     "jshint": "^2.8.0",
